@@ -6,11 +6,39 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CB9582131F8E325000B5DA1A /* HRNetWork */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CB9582141F8E325000B5DA1A /* Build configuration list for PBXAggregateTarget "HRNetWork" */;
+			buildPhases = (
+				CB9582191F8E325D00B5DA1A /* ShellScript */,
+			);
+			dependencies = (
+				CB9582181F8E325900B5DA1A /* PBXTargetDependency */,
+			);
+			name = HRNetWork;
+			productName = HRNetWork;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		CB95820D1F8E214900B5DA1A /* HRNetWorking.h in Headers */ = {isa = PBXBuildFile; fileRef = CB95820B1F8E214900B5DA1A /* HRNetWorking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CB9582171F8E325900B5DA1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9581FF1F8E214800B5DA1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9582071F8E214900B5DA1A;
+			remoteInfo = HRNetWorking;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1666607A2D87C559B0F909A8 /* Pods-HRNetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRNetWorking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRNetWorking/Pods-HRNetWorking.debug.xcconfig"; sourceTree = "<group>"; };
+		4AC5291A23AB8A182A98BCFD /* libPods-HRNetWorking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRNetWorking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABF32E8A8E6CF2639AC31BA /* Pods-HRNetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRNetWorking.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRNetWorking/Pods-HRNetWorking.release.xcconfig"; sourceTree = "<group>"; };
 		CB9582081F8E214900B5DA1A /* HRNetWorking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HRNetWorking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB95820B1F8E214900B5DA1A /* HRNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRNetWorking.h; sourceTree = "<group>"; };
 		CB95820C1F8E214900B5DA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,11 +55,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0CFFCAE9D428F0ABF08AB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AC5291A23AB8A182A98BCFD /* libPods-HRNetWorking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C455046A79BBBB2002EE632E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1666607A2D87C559B0F909A8 /* Pods-HRNetWorking.debug.xcconfig */,
+				BABF32E8A8E6CF2639AC31BA /* Pods-HRNetWorking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CB9581FE1F8E214800B5DA1A = {
 			isa = PBXGroup;
 			children = (
 				CB95820A1F8E214900B5DA1A /* HRNetWorking */,
 				CB9582091F8E214900B5DA1A /* Products */,
+				C455046A79BBBB2002EE632E /* Pods */,
+				0A0CFFCAE9D428F0ABF08AB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,10 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB9582101F8E214900B5DA1A /* Build configuration list for PBXNativeTarget "HRNetWorking" */;
 			buildPhases = (
+				386BB31B2109E47E98E63A9D /* [CP] Check Pods Manifest.lock */,
 				CB9582031F8E214900B5DA1A /* Sources */,
 				CB9582041F8E214900B5DA1A /* Frameworks */,
 				CB9582051F8E214900B5DA1A /* Headers */,
 				CB9582061F8E214900B5DA1A /* Resources */,
+				4EBF613CA5639D89539A4C40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +146,10 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
+					CB9582131F8E325000B5DA1A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = CB9582021F8E214800B5DA1A /* Build configuration list for PBXProject "HRNetWorking" */;
@@ -112,6 +165,7 @@
 			projectRoot = "";
 			targets = (
 				CB9582071F8E214900B5DA1A /* HRNetWorking */,
+				CB9582131F8E325000B5DA1A /* HRNetWork */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +180,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		386BB31B2109E47E98E63A9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HRNetWorking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EBF613CA5639D89539A4C40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HRNetWorking/Pods-HRNetWorking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9582191F8E325D00B5DA1A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#要build的target名\nTARGET_NAME=${PROJECT_NAME}\nif [[ $1 ]]\nthen\nTARGET_NAME=$1\nfi\nUNIVERSAL_OUTPUT_FOLDER=\"${SRCROOT}/${PROJECT_NAME}/\"\n\n#创建输出目录，并删除之前的framework文件\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\nrm -rf \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework\"\n\n#分别编译模拟器和真机的Framework\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n#拷贝framework到univer目录\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework\" \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n#合并framework，输出最终的framework到build目录\nlipo -create -output \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n#删除编译之后生成的无关的配置文件\ndir_path=\"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/\"\nfor file in ls $dir_path\ndo\nif [[ ${file} =~ \".xcconfig\" ]]\nthen\nrm -f \"${dir_path}/${file}\"\nfi\ndone\n#判断build文件夹是否存在，存在则删除\nif [ -d \"${SRCROOT}/build\" ]\nthen\nrm -rf \"${SRCROOT}/build\"\nfi\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n#打开合并后的文件夹\nopen \"${UNIVERSAL_OUTPUT_FOLDER}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB9582031F8E214900B5DA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -135,6 +238,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB9582181F8E325900B5DA1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB9582071F8E214900B5DA1A /* HRNetWorking */;
+			targetProxy = CB9582171F8E325900B5DA1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CB95820E1F8E214900B5DA1A /* Debug */ = {
@@ -249,17 +360,35 @@
 		};
 		CB9582111F8E214900B5DA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1666607A2D87C559B0F909A8 /* Pods-HRNetWorking.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 5V8XW7F2LA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HRNetWorking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-lz",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.geek00.HRNetWorking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -269,21 +398,57 @@
 		};
 		CB9582121F8E214900B5DA1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BABF32E8A8E6CF2639AC31BA /* Pods-HRNetWorking.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 5V8XW7F2LA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HRNetWorking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-lz",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.geek00.HRNetWorking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB9582151F8E325000B5DA1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V8XW7F2LA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB9582161F8E325000B5DA1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V8XW7F2LA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -304,6 +469,15 @@
 			buildConfigurations = (
 				CB9582111F8E214900B5DA1A /* Debug */,
 				CB9582121F8E214900B5DA1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9582141F8E325000B5DA1A /* Build configuration list for PBXAggregateTarget "HRNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9582151F8E325000B5DA1A /* Debug */,
+				CB9582161F8E325000B5DA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
