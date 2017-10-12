@@ -23,6 +23,9 @@
 
 /* Begin PBXBuildFile section */
 		CB95820D1F8E214900B5DA1A /* HRNetWorking.h in Headers */ = {isa = PBXBuildFile; fileRef = CB95820B1F8E214900B5DA1A /* HRNetWorking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB9582391F8F25D900B5DA1A /* XXUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9582371F8F25D900B5DA1A /* XXUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB95823A1F8F25D900B5DA1A /* XXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9582381F8F25D900B5DA1A /* XXUtils.m */; };
+		CB95823D1F8F286500B5DA1A /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95823B1F8F286500B5DA1A /* AFAppDotNetAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +40,14 @@
 
 /* Begin PBXFileReference section */
 		1666607A2D87C559B0F909A8 /* Pods-HRNetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRNetWorking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HRNetWorking/Pods-HRNetWorking.debug.xcconfig"; sourceTree = "<group>"; };
-		4AC5291A23AB8A182A98BCFD /* libPods-HRNetWorking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRNetWorking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABF32E8A8E6CF2639AC31BA /* Pods-HRNetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HRNetWorking.release.xcconfig"; path = "Pods/Target Support Files/Pods-HRNetWorking/Pods-HRNetWorking.release.xcconfig"; sourceTree = "<group>"; };
 		CB9582081F8E214900B5DA1A /* HRNetWorking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HRNetWorking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB95820B1F8E214900B5DA1A /* HRNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRNetWorking.h; sourceTree = "<group>"; };
 		CB95820C1F8E214900B5DA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9582371F8F25D900B5DA1A /* XXUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXUtils.h; sourceTree = "<group>"; };
+		CB9582381F8F25D900B5DA1A /* XXUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXUtils.m; sourceTree = "<group>"; };
+		CB95823B1F8F286500B5DA1A /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		CB95823C1F8F286500B5DA1A /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,6 @@
 		0A0CFFCAE9D428F0ABF08AB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4AC5291A23AB8A182A98BCFD /* libPods-HRNetWorking.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +80,7 @@
 		CB9581FE1F8E214800B5DA1A = {
 			isa = PBXGroup;
 			children = (
+				CB9582361F8F25C600B5DA1A /* XXUtils */,
 				CB95820A1F8E214900B5DA1A /* HRNetWorking */,
 				CB9582091F8E214900B5DA1A /* Products */,
 				C455046A79BBBB2002EE632E /* Pods */,
@@ -99,6 +105,17 @@
 			path = HRNetWorking;
 			sourceTree = "<group>";
 		};
+		CB9582361F8F25C600B5DA1A /* XXUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CB9582371F8F25D900B5DA1A /* XXUtils.h */,
+				CB9582381F8F25D900B5DA1A /* XXUtils.m */,
+				CB95823C1F8F286500B5DA1A /* AFAppDotNetAPIClient.h */,
+				CB95823B1F8F286500B5DA1A /* AFAppDotNetAPIClient.m */,
+			);
+			path = XXUtils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -106,6 +123,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9582391F8F25D900B5DA1A /* XXUtils.h in Headers */,
 				CB95820D1F8E214900B5DA1A /* HRNetWorking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,9 +223,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HRNetWorking/Pods-HRNetWorking-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -234,6 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB95823D1F8F286500B5DA1A /* AFAppDotNetAPIClient.m in Sources */,
+				CB95823A1F8F25D900B5DA1A /* XXUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
